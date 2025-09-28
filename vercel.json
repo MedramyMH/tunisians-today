@@ -9,7 +9,7 @@
     { "src": "/(.*)", "dest": "/app/$1" }
   ],
   "env": {
-    "DATABASE_URL": "@database_url",
-    "WEATHER_API_KEY": "@weather_api_key"
+    "DATABASE_URL": "postgresql://postgres:[Medramy12345*-]@db.dzrvspvgmojfwvegcfhj.supabase.co:5432/postgres",
+    "WEATHER_API_KEY": "ea4abc7de66048e3b8b85049252809"
   }
 }
