@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "package.json", "use": "@vercel/next" },
+    { "src": "scripts/**/*.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/app/api/$1" },
+    { "src": "/(.*)", "dest": "/app/$1" }
+  ],
+  "env": {
+    "DATABASE_URL": "@database_url",
+    "WEATHER_API_KEY": "@weather_api_key"
+  }
+}
