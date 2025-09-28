@@ -4,12 +4,10 @@
     { "src": "package.json", "use": "@vercel/next" },
     { "src": "scripts/**/*.py", "use": "@vercel/python" }
   ],
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/app/api/$1" },
-    { "src": "/(.*)", "dest": "/app/$1" }
-  ],
   "env": {
-    "DATABASE_URL": "postgresql://postgres:[Medramy12345*-]@db.dzrvspvgmojfwvegcfhj.supabase.co:5432/postgres",
-    "WEATHER_API_KEY": "ea4abc7de66048e3b8b85049252809"
+    "DATABASE_URL": "postgresql://postgres:Medramy12345*-@db.dzrvspvgmojfwvegcfhj.supabase.co:5432/postgres",
+    "WEATHER_API_KEY": "ea4abc7de66048e3b8b85049252809",
+    "ADMIN_USERNAME": "ramy",
+    "ADMIN_PASSWORD": "123456"
   }
 }
